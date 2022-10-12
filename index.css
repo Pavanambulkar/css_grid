@@ -54,7 +54,7 @@
 
 }
 .btn{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     margin-left: 30px;
     height: 50px;
     width: 200px;
@@ -150,9 +150,7 @@ hr{
     grid-template-rows: repeat(1, 1fr);
     text-align: center;
 }
-.third > div{
-    border: 1px solid black;
-}
+
 .third > div > img{
     height: 60px;
     width: 60px;
@@ -257,6 +255,93 @@ hr{
 .lor{
     color: rgb(255,179,144);
 }
+.icon{
+    color: white;
+}
+.sixth{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.sixth > div{
+    background-color: rgb(251,104,61);
+}
+ .skill1{
+    background-color: rgb(22,22,22);
+    /* width:; */
+    padding-left: 30px;
+   
+}
+
+.skill1  h1{
+    color: white;
+}
+.skill1  h2{
+    color: white;
+    margin-top: 40px;
+}
+.skill1  p{
+    color: white;
+}
+.icon1{
+    margin-top: -25px;
+}
+.f1 {
+    padding-left: 30px;
+    color: whitesmoke;
+}
+.f1 > input{
+    border: none;
+    background: transparent;
+}
+.f1 > input:hover{
+    border: none;
+}
+.msg{
+    height: 100px;
+    width: 90%;
+    color: whitesmoke;
+    margin-top: 20px;
+
+}
+.send{
+    margin-left: 30px;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.sec-box1{
+    display: flex;
+    flex-direction: row;
+
+}
+.map{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: rgb(251,104,61);
+    
+   
+}
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.icon > img{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
 /* 
 .one >  h3 {
     color: whitesmoke;
@@ -321,6 +406,23 @@ hr{
         grid-template-rows: repeat(2, 1fr);
     
     }
+    .sixth{
+       
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skill1{
+        height: 100%;
+    }
+    
+    .map{
+        margin-top: 10px;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 120px;
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width: 81px) and (max-width: 399px){
@@ -370,4 +472,20 @@ hr{
          grid-template-rows: repeat(2, 1fr);
      
      }
+     .sixth{
+       
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skill1{
+        height: 100%;
+    }
+     .map{
+        display: none;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 450px;
+        padding-bottom: 30px;
+    }
 }
