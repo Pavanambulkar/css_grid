@@ -69,6 +69,83 @@
 
 }
 
+.second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.second > div > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-left: 30px;
+
+}
+.second > div > h1 + p{
+ color: orange;
+ padding-left: 30px;
+
+}
+.para + p{
+ margin-top: 40px;
+}
+.para >p + p{
+    margin-top: 25px;
+   }
+.para > p{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+}
+.sec-box{
+    display: flex;
+    flex-direction: row;
+    
+}
+.sec-box > div{
+    /* height: 100%; */
+    border: 1px solid blue;
+    justify-content: center;
+    
+   
+}
+
+.sec-box > div > img{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
+    
+}
+.skill{
+    background-color: rgb(235,175,79);
+    width: 100%;
+}
+.skill > h1{
+    color: white;
+    padding-left: 30px;
+}
+.skill > h1 + p{
+    color: white;
+    padding-left: 30px;
+}
+.same{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+hr{
+    margin-top: -10px;
+    width: 90%;
+    /* margin: auto; */
+}
+.same > h5{
+    font-size: 16px;
+}
+.same > h5 + p{
+    color: white;
+}
 @media (min-width: 400px) and (max-width: 700px){
     .first{
 
@@ -89,6 +166,22 @@
         flex-direction: column;
         text-align: center;
     }
+    #navbar + p{
+        margin-top: 70px;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+   
+    .sec-box{
+        flex-direction: column;
+        margin-bottom: -400px;
+       
+    }
+    
 }
 
 @media (min-width: 81px) and (max-width: 399px){
@@ -110,5 +203,20 @@
     #navbar{
         flex-direction: column;
         text-align: center;
+    }
+    #navbar + p{
+        margin-top: 70px;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+   
+    .sec-box{
+        flex-direction: column;
+        margin-bottom: -400px;
+       
     }
 }
