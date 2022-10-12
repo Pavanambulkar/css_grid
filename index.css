@@ -1,0 +1,114 @@
+.first{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    height: auto;
+}
+.first > div{
+    border: 1px solid red;
+}
+.first > div > img{
+    width: 100%;
+    height: 100%;
+}
+.first > div + div{
+    background-color: rgb(245,227,215);
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar > span{
+    padding: 8px;
+    justify-content: center;
+}
+#navbar > span:hover{
+    color: orange;
+}
+#navbar + p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(196,178,166);
+    padding-left: 30px;
+    margin-top: 150px;
+
+}
+.hello{
+    font-size: 38px;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    color: rgb(113, 107, 103);
+
+
+}
+.hello + p{
+    width: 80%;
+    /* margin: auto; */
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+
+}
+.btn{
+    border: 3px solid black;
+    margin-left: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 17px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+
+
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+    .first{
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    
+    .first > div > img{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 81px) and (max-width: 399px){
+    .first{
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    
+    .first > div > img{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+}
